@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="horizontal"
+  	android:layout_width="match_parent"
+  	android:layout_height="match_parent" >
+	<LinearLayout
+	  	android:id="@+id/layoutDialog"
+	  	android:orientation="vertical"
+	  	android:layout_width="180dp"
+	  	android:layout_height="match_parent" 
+	  	android:gravity="top|center" 
+	  	android:background="#F4FFFFFF" >
+		<LinearLayout
+		  	android:layout_width="match_parent"
+		  	android:layout_height="wrap_content" 
+		  	android:gravity="center" 
+		  	android:background="#AAFFFFFF">
+		    <TextView
+		        android:id="@+id/txtHead2"
+		        android:layout_width="match_parent"
+		        android:text="Large Text" 
+		        android:textSize="20dp" 
+		        android:gravity="center" 
+		        android:layout_height="match_parent" 
+		        android:layout_margin="10dp"
+			    android:textColor="#FFFFFF"
+			    android:shadowColor="#AA000000"
+			    android:shadowDx="0"
+			    android:shadowDy="0"
+			    android:shadowRadius="2" />
+		</LinearLayout>
+	  	    <!-- 
+	  	    android:listSelector="@drawable/cursor" 
+	  	    android:divider="@drawable/line" 
+	  	    android:scrollbarThumbVertical="@drawable/scrollvertical" 
+	  	    -->
+
+		<TextView
+		    android:id="@+id/txtVal"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="TextView" />
+
+		<app.akexorcist.cameratakesnapshot.VerticalSeekBar
+			android:id="@+id/seekBar"
+			android:progressDrawable="@drawable/progress_vertical"
+    		android:thumb="@drawable/seek_thumb"
+		    android:layout_height="fill_parent" 
+		    android:layout_width="28dp" android:layout_margin="20dp"/>
+	  
+	</LinearLayout>
+	<LinearLayout
+	  	android:id="@+id/noneLayoutDialog2"
+	  	android:orientation="horizontal"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="fill_parent" 
+	  	android:background="#00000000" >
+	</LinearLayout>
+</LinearLayout>

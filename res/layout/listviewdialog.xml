@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="horizontal"
+  	android:layout_width="match_parent"
+  	android:layout_height="match_parent" >
+	<LinearLayout
+	  	android:id="@+id/layoutDialog"
+	  	android:orientation="vertical"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="match_parent" 
+	  	android:gravity="center" 
+	  	android:background="#F4FFFFFF" >
+		<LinearLayout
+		  	android:layout_width="match_parent"
+		  	android:layout_height="wrap_content" 
+		  	android:gravity="center" 
+		  	android:background="#AAFFFFFF" >
+		    <TextView
+		        android:id="@+id/txtHead"
+		        android:layout_width="match_parent"
+		        android:text="Large Text" 
+		        android:textSize="20dp" 
+		        android:gravity="center" 
+		        android:layout_height="match_parent" 
+		        android:layout_margin="10dp"
+			    android:textColor="#FFFFFF"
+			    android:shadowColor="#AA000000"
+			    android:shadowDx="0"
+			    android:shadowDy="0"
+			    android:shadowRadius="2" />
+		</LinearLayout>
+	  	<ListView 
+	  	    android:id="@+id/listView"  
+	  	    android:layout_height="match_parent" 
+	  	    android:layout_width="160dp" 
+	  	    android:smoothScrollbar="true"
+	        android:layout_marginBottom="20dp" 
+	        android:layout_marginLeft="20dp" 
+	        android:layout_marginRight="20dp" 
+	        android:scrollbarThumbVertical="@drawable/blank" 
+	        android:divider="@drawable/blank" 
+	        android:listSelector="@drawable/listselector"/>
+	  	    <!-- 
+	  	    android:listSelector="@drawable/cursor" 
+	  	    android:divider="@drawable/line" 
+	  	    android:scrollbarThumbVertical="@drawable/scrollvertical" 
+	  	    -->
+	    
+	  
+	</LinearLayout>
+	<LinearLayout
+	  	android:id="@+id/noneLayoutDialog"
+	  	android:orientation="horizontal"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="fill_parent" 
+	  	android:background="#00000000" >
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<SurfaceView
+	    android:id="@+id/preview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" />
+  	<RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="80dip"
+	    android:layout_alignParentBottom="true"
+	    android:gravity="center_vertical"
+		android:orientation="horizontal">
+		<LinearLayout 
+		    android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent" 
+			android:gravity="center_vertical|center_horizontal" android:scrollbarTrackVertical="@drawable/blank" android:scrollbarTrackHorizontal="@drawable/blank" android:scrollbarThumbVertical="@drawable/blank" android:scrollbarThumbHorizontal="@drawable/blank">
+			<LinearLayout 
+			    android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent" 
+				android:gravity="center_vertical|center_horizontal" >
+				<Button
+				    android:id="@+id/btnSnap"
+				    android:layout_width="80dp"
+				    android:layout_height="80dp" 
+				    android:background="@drawable/imgsnap"/>
+			</LinearLayout>
+			<HorizontalScrollView
+				android:id="@+id/horizontalScrollView1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_marginTop="6dp" android:scrollbarThumbHorizontal="@drawable/blank">
+			    <LinearLayout 
+			        android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:gravity="center_vertical|center_horizontal" >
+				    <Button
+				        android:id="@+id/btnSize"
+				      	android:layout_width="60dp"
+				      	android:layout_height="60dp"
+				      	android:background="@drawable/imgsize"/>
+		
+				    <Button
+				        android:id="@+id/btnScene"
+				      	android:layout_width="60dp"
+				      	android:layout_height="60dp"
+				      	android:background="@drawable/imgscene"/>
+				    <Button
+				        android:id="@+id/btnFlash"
+				      	android:layout_width="60dp"
+				      	android:layout_height="60dp"
+				      	android:background="@drawable/imgflash"/>
+				    <Button
+				        android:id="@+id/btnWB"
+				      	android:layout_width="60dp"
+				      	android:layout_height="60dp"
+				      	android:background="@drawable/imgwhitebalance"/>
+				    <Button
+				        android:id="@+id/btnFocus"
+				      	android:layout_width="60dp"
+				      	android:layout_height="60dp" android:background="@drawable/imgfocus"/>
+				    <Button
+				        android:id="@+id/btnColor"
+				      	android:layout_width="60dp"
+				      	android:layout_height="60dp" android:background="@drawable/imgcoloreffect"/>
+				    
+				    <!-- 
+				    <Button
+				        android:id="@+id/btnEV"
+				      	android:layout_width="60dp"
+				      	android:layout_height="60dp" 
+				      	android:background="@drawable/imgexposure" />
+				    -->
+				    
+				    <Button
+				        android:id="@+id/btnGallery"
+				      	android:layout_width="60dp"
+				      	android:layout_height="60dp"
+				      	android:background="@drawable/imggallery" />
+			    </LinearLayout>
+		    
+			</HorizontalScrollView>
+		
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>
